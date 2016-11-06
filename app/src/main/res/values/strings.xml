@@ -6,12 +6,57 @@
     -->
     <string name="app_name">Moonlight</string>
 
+    <!-- Activity titles -->
+    <string name="title_activity_detail">Details</string>
+    <string name="title_activity_settings">Settings</string>
+
     <!--
         By convention, "action" denotes that this String will be used as the label for an Action,
         typically from the action bar.  The ActionBar is limited real estate, so shorter is better.
     -->
+    <!-- Menu label to open the settings [CHAR LIMIT=30] -->
     <string name="action_settings">Settings</string>
 
-    <!-- Menu label to fetch updated weather info from the server -->
+    <!-- Menu label to open in a map the user preferred location [CHAR LIMIT=30] -->
+    <string name="action_map">Map location</string>
+
+    <!-- Menu label to fetch updated weather info from the server [CHAR LIMIT=30] -->
     <string name="action_refresh" translatable="false">Refresh</string>
+
+    <!-- Menu label to share weather [CHAR LIMIT=30] -->
+    <string name="action_share">Share</string>
+
+
+    <!-- Label for the location preference [CHAR LIMIT=30] -->
+    <string name="pref_location_label">Location</string>
+
+    <!-- Key name for storing location in SharedPreferences [CHAR LIMIT=NONE] -->
+    <string name="pref_location_key" translatable="false">location</string>
+
+    <!-- Default postal code for location preference [CHAR LIMIT=NONE] -->
+    <string name="pref_location_default" translatable="false">28001, Spain</string>
+
+    <!-- Label for the temperature units preference [CHAR LIMIT=30] -->
+    <string name="pref_units_label">Temperature Units</string>
+
+    <!-- Label for metric option in temperature unit preference [CHAR LIMIT=25] -->
+    <string name="pref_units_label_metric">Metric</string>
+
+    <!-- Label for imperial option in temperature unit preference [CHAR LIMIT=25] -->
+    <string name="pref_units_label_imperial">Imperial</string>
+
+    <!-- Key name for temperature unit preference in SharedPreferences [CHAR LIMIT=NONE] -->
+    <string name="pref_units_key" translatable="false">units</string>
+
+    <!-- Value in SharedPreferences for metric temperature unit option [CHAR LIMIT=NONE] -->
+    <string name="pref_units_metric" translatable="false">metric</string>
+
+    <!-- Value in SharedPreferences for imperial temperature unit option [CHAR LIMIT=NONE] -->
+    <string name="pref_units_imperial" translatable="false">imperial</string>
+
+    <!-- Url to retrieve the forecastfragment -->
+    <string name="forecast_base_url" translatable="false">http://api.openweathermap.org/data/2.5/forecast/daily?mode=json&amp;units=metric&amp;cnt=14</string>
+    <string name="forecast_url_query_param" translatable="false">q</string>
+    <string name="forecast_url_appid_param" translatable="false">APPID</string>
+    <string name="forecast_share_hashtag">" #Moonlight"</string>
 </resources>
